@@ -3,7 +3,7 @@
       <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
           <div class="form-group">
               <label for="name"></label>
-              <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" placeholder= "enter user nam or repository name" name="name" #name="ngModel" required>
+              <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" placeholder= "enter user name or repository name" name="name" #name="ngModel" required>
                   <div [hidden]="name.valid || name.pristine" class="alert alert-danger"></div>
           </div>
           <div class="form-group">
