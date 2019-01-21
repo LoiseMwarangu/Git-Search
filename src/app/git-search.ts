@@ -1,1 +1,4 @@
-export class GitSearch {public username:string ; public repository:string; }
+export class Gitsearch {
+    public bio: string;
+    public name: string;
+}

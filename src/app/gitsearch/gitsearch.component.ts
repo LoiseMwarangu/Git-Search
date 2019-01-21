@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './git-search.component.html',
   styleUrls: ['./git-search.component.css']
 })
-export class GitSearchComponent implements OnInit {
+export class GitsearchComponent implements OnInit {
 
   constructor() { }
 
