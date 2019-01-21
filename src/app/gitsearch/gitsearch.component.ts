@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {GitsearchService} from '../service/gitsearch.service'
+
 
 @Component({
   selector: 'app-git-search',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitsearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _gitsearchService:GitsearchService) { }
 
   ngOnInit() {
   }
