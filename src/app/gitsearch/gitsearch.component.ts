@@ -3,13 +3,19 @@ import {GitsearchService} from '../service/gitsearch.service'
 
 
 @Component({
+  moduleId: module.id,
   selector: 'app-git-search',
   templateUrl: './git-search.component.html',
   styleUrls: ['./git-search.component.css']
 })
 export class GitsearchComponent implements OnInit {
-
-  constructor(private _gitsearchService:GitsearchService) { }
+  user:any;
+  constructor(private _gitsearchService:GitsearchService) {
+    this._gitsearchService.getUser().subscribe(user =>{
+      this.user=user;
+      console.log(this.user)
+    });
+   }
 
   ngOnInit() {
   }
