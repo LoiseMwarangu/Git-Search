@@ -2,13 +2,10 @@
 ## Author
 Loise Mwarangu (https://github.com/LoiseMwarangu)
 # Description
-This is a web page that allows users to search for where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
-
-
+This is a web page that allows users to search for where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories.
 ###Prerequisites
 * An internet connection is important
 * You need to have git installed You can install it with the following command in your terminal $ sudo apt install git-all
-
 ## Setup
 To access this project on your local files, you can clone it using these steps
 * Open your terminal
@@ -22,12 +19,11 @@ To access this project on your local files, you can clone it using these steps
 * Angular js
 * Git
 ### Program Behaviour
-* The program contains one input option that the user is required to add information to.The user has to add a user name or a repository of their choice then click on the search button.The user is then redirected to a github page where all the repositories and user names that are related to the search.
-* The user can then click any of the options depending on what they are looking for.if they click on a repository,a page showing files inside the repository is displayed along with options such as cloning and forking.The user now has access to the 
+* The program contains one input option that the user is required to add information to.The user has to add a user name or a repository of their choice then click on the search button.The user is then redirected to a github page where all the repositories and user names that are related to the search appear.
+* The user can then click any of the options depending on what they are looking for.if they click on a repository,a page showing files inside the repository is displayed along with the user and options such as cloning and forking.The user now has access to github.
+* If the user clicks on another user , a pag with  users profile is displayed and then they will have access to the users repository 
 * Incase the user fails to add the above information but still clicks on the search button,nothing will happen.
-* 
 # live link
-One can access the live website using this link  https://loisemwarangu.github.io/Quotes/
-
+One can access the live website using this link  https://loisemwarangu.github.io/git-search/
 # Licence
 This project is under the MIT licence
