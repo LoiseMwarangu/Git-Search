@@ -6,23 +6,25 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { GitsearchService } from './service/gitsearch.service';
-import { IntroComponent } from './intro/intro.component';
 import { RoutingModule } from './routing/routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BoldedPipe } from './bolded.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { environment } from './environments/environment';
+// import { UserComponent } from './user/user.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GitsearchComponent,
-    IntroComponent,
+    IntroductionComponent,
     PageNotFoundComponent,
     BoldedPipe,
     HighlightDirective,
-    environment
+    environment,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
