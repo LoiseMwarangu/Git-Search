@@ -1,12 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import {GitsearchService} from './service/gitsearch.service'
+import{ Repository } from './repository';
 
 @Pipe({
-  name: 'bolden'
+  name: 'bolded'
 })
-export class BoldenPipe implements PipeTransform {
+export class BoldedPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value: string): any {
+    return value.toUpperCase();
   }
 
 }

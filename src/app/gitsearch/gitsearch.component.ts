@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {GitsearchService} from '../service/gitsearch.service'
 import { HttpClient } from '@angular/common/http';
 import { User } from '../user';
-import{ Repo } from '../repository';
+import{ Repository } from '../repository';
 
 @Component({
   moduleId: module.id,
@@ -14,26 +14,25 @@ import{ Repo } from '../repository';
 
 export class GitsearchComponent implements OnInit {
   user:User;
-  repos:Repo;
+  repos:Repository;
   public username:string;
-  repsArray:any[];
+  reposArray:any[];
 
-  constructor(private _gitsearch:GitsearchService ) {
+  constructor(private _gitsearch:GitsearchService ) {}
 
   searchProfile(){
     this._gitsearch.updateProfile(this.username);
     this._gitsearch.profileRequest();
     this._gitsearch.repoRequest();
     this.reposArray = this._gitsearch.reposArray;
-    });
    }
 
   ngOnInit() {
-    this.gitProfile.profileRequest();
-    this.profile = this.gitProfile.profile;
+    this._gitsearch.profileRequest();
+    this.user = this._gitsearch.user;
 
-    this.gitProfile.repoRequest();
-    this.reposArray = this.gitProfile.reposArray;
+    this._gitsearch.repoRequest();
+    this.reposArray = this._gitsearch.reposArray;
   }
 
 }

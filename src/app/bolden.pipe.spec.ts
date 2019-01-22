@@ -1,8 +1,8 @@
-import { BoldenPipe } from './bolden.pipe';
+import { BoldedPipe } from './bolded.pipe';
 
-describe('BoldenPipe', () => {
+describe('BoldedPipe', () => {
   it('create an instance', () => {
-    const pipe = new BoldenPipe();
+    const pipe = new BoldedPipe();
     expect(pipe).toBeTruthy();
   });
 });

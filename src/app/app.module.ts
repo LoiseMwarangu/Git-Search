@@ -1,26 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { HubService } from './service/service.component';
 import { AppComponent } from './app.component';
+import { GitsearchComponent } from './gitsearch/gitsearch.component';
+import { GitsearchService } from './service/gitsearch.service';
+import { IntroComponent } from './intro/intro.component';
+import { RoutingModule } from './routing/routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BoldedPipe } from './bolded.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { BoldenPipe } from './bolden.pipe';
-// import { HubComponent } from './git-search/git-search.component';
+import { environment } from './environments/environment';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    GitsearchComponent,
+    IntroComponent,
+    PageNotFoundComponent,
+    BoldedPipe,
     HighlightDirective,
-    BoldenPipe,
-    // HubComponent,
+    environment
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    HttpModule,
+    FormsModule,
+    RoutingModule
   ],
-  providers: [HubService],
+  providers: [GitsearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
