@@ -3,25 +3,26 @@ import {HttpClient,HttpParams} from '@angular/common/http';
 import {http,Headers} from '@angular/http';
 import { filter, map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-
+import {pipe} from ''
 
 @Injectable(
-    {providedIn:'root'}
-    constructor(private http:HttpClient){};
-)
+    {providedIn:'root'});
+
 export class GitsearchService{
     private username: string;
-    client id= '63803c21ae36ca102d8f';
-    client secret= '035207e594845697a248822218ac167e7735bb0b';   
+    private clientid= '63803c21ae36ca102d8f';
+    private clientsecret= '035207e594845697a248822218ac167e7735bb0b';   
     constructor(private _http:HttpClient){
-        console.log('Gitsearch service started')
-        this.username= 'LoiseMwarangu'
+        console.log('Gitsearch service started');
+        this.username= 'LoiseMwarangu';
     }
     getUser(){
-
-        return this.http.get<Apiresponse>('https://api.github.com/users/' + this.username +
+        return this.http.get("https://api.github.com/users/" + this.username +
          '?client_id' + this.clientid + '&client_secret=' + this.
-        clientsecret).toPromise();
+        clientsecret).toPromise()
+        .pipe(
+         map(result => result);
+        )
       }
        
       getgitsearchInfo() {
@@ -51,7 +52,7 @@ export class GitsearchService{
          '/repos?client_id' + this.clientid + '&client_secret=' + this.
           clientsecret).toPromise();
       }
-      updateHub(username: string) {
+      updateGitsearch(username: string) {
         this.username = username;
       }
     }

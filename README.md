@@ -25,5 +25,5 @@ To access this project on your local files, you can clone it using these steps
 * Incase the user fails to add the above information but still clicks on the search button,nothing will happen.
 # live link
 One can access the live website using this link  https://loisemwarangu.github.io/git-search/
-# Licence
+# License
 This project is under the MIT licence
