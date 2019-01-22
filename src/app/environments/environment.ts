@@ -7,10 +7,7 @@
     FinalUrl:"?client_id=63803c21ae36ca102d8f&client_secret=035207e594845697a248822218ac167e7735bb0b",
     production: false,
   }
-};
-// a7c3bf2007e17d8f23d7f54548eb6faf85bf21e6 
-// Personal Access Token
-// /*
+
 //  * For easier debugging in development mode, you can import the following file
 //  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
 //  *
