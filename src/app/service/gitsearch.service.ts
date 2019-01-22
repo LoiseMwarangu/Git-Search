@@ -18,6 +18,7 @@ export class GitsearchService{
         this.username= 'LoiseMwarangu'
     }
     getUser(){
+
         return this.http.get<Apiresponse>('https://api.github.com/users/' + this.username +
          '?client_id' + this.clientid + '&client_secret=' + this.
         clientsecret).toPromise();
