@@ -10,7 +10,7 @@ import {GitsearchService} from '../service/gitsearch.service'
 })
 export class GitsearchComponent implements OnInit {
   user:any;
-  constructor(private _gitsearchService:GitsearchService) {
+  constructor(private _gitsearchService:GitsearchService ,alertService:AlertsService,private http:HttpClient) {
     this._gitsearchService.getUser().subscribe(user =>{
       this.user=user;
       console.log(this.user)

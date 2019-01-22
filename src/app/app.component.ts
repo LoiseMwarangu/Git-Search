@@ -3,6 +3,8 @@ import {GitsearchComponent} from  './gitsearch/gitsearch.component'
 import {GitsearchService} from './service/gitsearch.service';
 import {HTTP_PROVIDERS} from '@angular/http';
 @Component({
+  moduleId: module.id,
+ 
   selector: 'app-root',
   templateUrl: './app.component.html',
   directives: [GitsearchComponent],
