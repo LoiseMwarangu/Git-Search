@@ -1,27 +1,33 @@
-# GithubSearch
+# Git-hub Search
+## Author
+Loise Mwarangu (https://github.com/LoiseMwarangu)
+# Description
+This is a web page that allows users to search for where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
-## Development server
+###Prerequisites
+* An internet connection is important
+* You need to have git installed You can install it with the following command in your terminal $ sudo apt install git-all
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup
+To access this project on your local files, you can clone it using these steps
+* Open your terminal
+* Use this command $ git clone https://github.com/LoiseMwarangu/git-search
+* This will clone the repository into your local folder
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies Used
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+* HTML
+* CSS
+* Angular js
+* Git
+### Program Behaviour
+* The program contains one input option that the user is required to add information to.The user has to add a user name or a repository of their choice then click on the search button.The user is then redirected to a github page where all the repositories and user names that are related to the search.
+* The user can then click any of the options depending on what they are looking for.if they click on a repository,a page showing files inside the repository is displayed along with options such as cloning and forking.The user now has access to the 
+* Incase the user fails to add the above information but still clicks on the search button,nothing will happen.
+* 
+# live link
+One can access the live website using this link  https://loisemwarangu.github.io/Quotes/
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Licence
+This project is under the MIT licence

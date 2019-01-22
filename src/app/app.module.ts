@@ -10,8 +10,10 @@ import {HttpClient} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClient
   ],
+  providers:[]
   bootstrap: [AppComponent]
 })
 export class AppModule { }
