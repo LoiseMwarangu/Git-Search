@@ -1,8 +1,7 @@
-
+import { environment } from '../environments/environment';
 import { Injectable } from '@angular/core';
 import { User } from '../user';
 import { Repository } from '../repository';
-import { environment } from '../environments/environment';
 import { HttpClient, } from '@angular/common/http';
 import {  Http, Headers } from '@angular/http'
 

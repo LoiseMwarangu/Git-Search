@@ -4,14 +4,13 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { Environment } from './environments/environment';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { GitsearchService } from './service/gitsearch.service';
 import { RoutingModule } from './routing/routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BoldedPipe } from './bolded.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { environment } from './environments/environment';
-// import { UserComponent } from './user/user.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 
 
@@ -23,15 +22,15 @@ import { IntroductionComponent } from './introduction/introduction.component';
     PageNotFoundComponent,
     BoldedPipe,
     HighlightDirective,
-    environment,
-    IntroductionComponent
+    IntroductionComponent,
+    Environment
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     HttpModule,
     FormsModule,
-    RoutingModule
+    RoutingModule  
   ],
   providers: [GitsearchService],
   bootstrap: [AppComponent]

@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {GitsearchService} from '../service/gitsearch.service'
-import { HttpClient } from '@angular/common/http';
 import { User } from '../user';
 import{ Repository } from '../repository';
 
+
 @Component({
-  moduleId: module.id,
   selector: 'app-git-search',
   templateUrl: './git-search.component.html',
   styleUrls: ['./git-search.component.css'],
