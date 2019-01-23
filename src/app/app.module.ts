@@ -4,7 +4,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { Environment } from './environments/environment';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { GitsearchService } from './service/gitsearch.service';
 import { RoutingModule } from './routing/routing.module';
@@ -23,7 +22,6 @@ import { IntroductionComponent } from './introduction/introduction.component';
     BoldedPipe,
     HighlightDirective,
     IntroductionComponent,
-    Environment
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,8 @@
-import { environment } from '../environments/environment';
+// import { environment } from '../environments/environment';
 import { Injectable } from '@angular/core';
 import { User } from '../user';
 import { Repository } from '../repository';
-import { HttpClient, } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import {  Http, Headers } from '@angular/http'
 
 @Injectable({
@@ -14,8 +14,9 @@ export class GitsearchService {
   user:User;
   repos:Repository;
   reposArray:any;
-  BaseUrl = environment.BaseUrl;
-  FinalUrl = environment.FinalUrl;
+  BaseUrl = "https://api.github.com/users/";
+  FinalUrl ="?client_id=63803c21ae36ca102d8f&client_secret=035207e594845697a248822218ac167e7735bb0b";
+  ;
 
   constructor(private http: Http) {
     this.username = "LoiseMwarangu";
@@ -84,15 +85,14 @@ export class GitsearchService {
         this.repos.description = repo.description;
         this.reposArray.push(this.repos);
         this.repos = new Repository("","","");
-
         }
-        console.log(this.reposArray);
+        
         // this.repos.name = response.name;
         // this.repos.html_url = response.html_url;
         // this.repos.description = response.description;
-        // resolve()
-        // console.log("Working2!");
-        // console.log(response);
+        resolve()
+        console.log("Working2!");
+        console.log(response);
       },
       error=>{
         console.log("Error occured")
