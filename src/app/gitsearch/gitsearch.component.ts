@@ -5,10 +5,9 @@ import{ Repository } from '../repository';
 
 
 @Component({
-  selector: 'app-git-search',
-  templateUrl: './git-search.component.html',
-  styleUrls: ['./git-search.component.css'],
-  providers:[GitsearchService], 
+  selector: 'app-gitsearch',
+  templateUrl: './gitsearch.component.html',
+  styleUrls: ['./gitsearch.component.css'],
 })
 
 export class GitsearchComponent implements OnInit {
@@ -24,8 +23,7 @@ export class GitsearchComponent implements OnInit {
     this._gitsearch.profileRequest();
     this._gitsearch.repoRequest();
     this.reposArray = this._gitsearch.reposArray;
-   }
-
+     }
   ngOnInit() {
     this._gitsearch.profileRequest();
     this.user = this._gitsearch.user;
