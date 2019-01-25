@@ -16,3 +16,14 @@ p{
     filter: alpha(opacity=50);
 
 } */
+span {
+    display: inline-block; 
+    margin: 10px 0;        
+}
+.panel{
+        float:right;
+        font-size: 20px; 
+        opacity: 0.9;
+        filter: alpha(opacity=50);
+        font-weight: bolder;
+}

@@ -12,7 +12,7 @@
     </div>
   </form>
 </div>
-<div *ngIf= "user">
+<div class= "body" *ngIf= "user">
   <div class="panel">
     <div class="panel-heading">
       <h3 appHighlight>{{user.login}}'s Details</h3>
@@ -40,8 +40,8 @@
                 <h3 class="panel-heading">Repositories</h3>
               </div>
               <div class="panel-body" *ngFor="let repo of reposArray">
-                <p class="clearfix">
-                  {{repos.name}} <a href="{{repos.html_url}}" target="_blank" class="btn btn-md pull-right">View this project on Github</a>
+                <p class="clear-fix">
+                  <a href="{{repos.html_url}}" target="_blank" class="btn btn-md pull-right">{{repos.name}}</a>
                 </p>
                 <p>{{repos.description}} </p>
               </div>

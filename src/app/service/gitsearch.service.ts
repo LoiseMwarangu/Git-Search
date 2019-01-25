@@ -64,7 +64,7 @@ export class GitsearchService {
       html_url:string;
       description:string;
     }
-    let promise = new Promise((resolve,reject)=>{
+    let promise = new Promise<ApiResponse>((resolve,reject)=>{
       this.http.get(this.BaseUrl + this.username +"/repos" + this.FinalUrl).toPromise().then(response=> {
         for (let repo of response.json()) {
         this.repos.name = repo.name;

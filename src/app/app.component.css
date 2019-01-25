@@ -1,5 +1,5 @@
 .main{
-    background-image: url("https://static.makeuseof.com/wp-content/uploads/2015/12/best-search-engine-670x335.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIaGXoSt9QOcgUzpkEkehsAAMCfop5QJy2YTqThQucNxLy68Q");
     background-repeat: repeat-y;
     background-size: 100%;
 }
@@ -7,4 +7,12 @@
     font-size: 20px; 
     opacity: 0.9;
     filter: alpha(opacity=50);
+    color: white;
 }
+.body{
+        float:right;
+        font-size: 20px; 
+        opacity: 0.9;
+        filter: alpha(opacity=50);
+        font-weight: bolder;
+   }
