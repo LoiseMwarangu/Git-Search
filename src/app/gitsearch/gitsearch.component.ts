@@ -15,21 +15,22 @@ export class GitsearchComponent implements OnInit {
   repos:Repository;
   public username:string;
   reposArray:any[];
+  
 
-  constructor(private _gitsearch:GitsearchService ) {}
+  constructor(private gitsearchservice:GitsearchService ) {}
 
   searchProfile(){
-    this._gitsearch.updateProfile(this.username);
-    this._gitsearch.profileRequest();
-    this._gitsearch.repoRequest();
-    this.reposArray = this._gitsearch.reposArray;
+    this.gitsearchservice.updateProfile(this.username);
+    this.gitsearchservice.searchProfile();
+    this.gitsearchservice.repoRequest();
+    this.reposArray = this.gitsearchservice.reposArray;
      }
   ngOnInit() {
-    this._gitsearch.profileRequest();
-    this.user = this._gitsearch.user;
+    this.gitsearchservice.updateProfile;
+    this.user = this.gitsearchservice.user;
 
-    this._gitsearch.repoRequest();
-    this.reposArray = this._gitsearch.reposArray;
+    this.gitsearchservice.repoRequest();
+    this.reposArray = this.gitsearchservice.reposArray;
   }
 
 }

@@ -1,49 +1,8 @@
 <div id="intro">
   <div class="jumbotron">
-    <h1 class="page-header text-center">Github-Search App</h1>
+    <h1 class="page-header text-center">Github-profile finder</h1>
     <hr>
     <h4>Use this app to search any username of any Git-hub User to view their details.</h4>
-    <a href="/git-profile" class="btn">let us begin!</a>
+    <a href="/gitsearch" class="btn">click here to begin!</a>
   </div>
-</div>
-<div *ngIf= "profile">
-    <div class="panel">
-      <div class="panel-heading">
-        <h3 appHighlight>{{user.login}}'s Details</h3>
-      </div>
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-sm-3">
-            <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="{{profile.login}}'s Avatar">
-          </div>
-          <div class="col-sm-5">
-            <ul class="list-group">
-              <li class="list-group-item">{{user.login | bolded}} &mdash;{{user.login}}</li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <div>
-              <p>
-                <span class="label">{{user.followers}} Followers</span>
-                <span class="label">Following {{user.following}}</span>
-                <span class="label">{{user.public_repos}} Repositories</span>
-              </p>
-              <p><a href="{{user.html_url}}" target="_blank" class="btn btn-md">View profile on Github</a></p>
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-heading">Repositories</h3>
-                </div>
-                <div class="panel-body" *ngFor="let repo of reposArray">
-                  <p class="clearfix">
-                    {{repos.name}} <a href="{{repos.html_url}}" target="_blank" class="btn btn-md pull-right">View this project on Github</a>
-                  </p>
-                  <p>{{repos.description}} </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+</div> 

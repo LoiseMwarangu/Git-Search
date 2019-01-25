@@ -3,3 +3,8 @@
 background-image: url("http://psrexternal.s3.amazonaws.com/Photoshop-blog/wp-content/uploads/2013/12/15_2.jpg");
 background-repeat: repeat-y;
 } */
+.roots{
+    background-image: url("https://static.makeuseof.com/wp-content/uploads/2015/12/best-search-engine-670x335.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}

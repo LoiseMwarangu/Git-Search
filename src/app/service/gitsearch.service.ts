@@ -3,7 +3,7 @@ import {Promise} from 'es6-promise';
 import { Injectable } from '@angular/core';
 import { User } from '../user';
 import { Repository } from '../repository';
-import {  Http, Headers } from '@angular/http';
+import {  Http } from '@angular/http';
 
 @Injectable({
   providedIn: 'root'
@@ -16,18 +16,19 @@ export class GitsearchService {
   reposArray:any;
   BaseUrl = "https://api.github.com/users/";
   FinalUrl ="?client_id=63803c21ae36ca102d8f&client_secret=035207e594845697a248822218ac167e7735bb0b";
-  api= "a746b62e5db077d41d84600a3fa6df484f1d8579"
+  Api= "a746b62e5db077d41d84600a3fa6df484f1d8579"
   ;
 
-  constructor(private http: Http) {
+  constructor(public http: Http) {
     this.username = "LoiseMwarangu";
-    this.user= new User ("","","","","","","","","",0,0,0,0,"");
+    this.user= new User ("","","",0,0,0,"");
     this.repos = new Repository("","","");
     this.reposArray = [];
   }
 
-  profileRequest(){
+  searchProfile(){
     interface ApiResponse{
+      name:string;
       login:string;
       avatar_url:string;
       followers:number;
