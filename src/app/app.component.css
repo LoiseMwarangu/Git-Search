@@ -1,18 +1,12 @@
 .main{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIaGXoSt9QOcgUzpkEkehsAAMCfop5QJy2YTqThQucNxLy68Q");
+    background-image: url("https://wallpaper-house.com/data/out/1/wallpaper2you_13488.jpg");
     background-repeat: repeat-y;
     background-size: 100%;
 }
-.container{
+/* .container{
     font-size: 20px; 
     opacity: 0.9;
-    filter: alpha(opacity=50);
+    filter: alpha(opacity=70);
     color: white;
-}
-.body{
-        float:right;
-        font-size: 20px; 
-        opacity: 0.9;
-        filter: alpha(opacity=50);
-        font-weight: bolder;
-   }
+    padding: 5%;
+} */

@@ -2,13 +2,7 @@
     margin-left: 20%;
     font-family:"courier New", Courier, monospace;
 }
-h3{
-     float:right;
-     font-size: 20px; 
-     opacity: 0.9;
-     filter: alpha(opacity=50);
-     font-weight: bolder;
-}
+/* 
 p{
     font-size: 20px;
     font-family:"courier New", Courier;
@@ -16,14 +10,32 @@ p{
     filter: alpha(opacity=50);
 
 } */
-span {
+/* h3{
+    float:right;
+    font-size: 20px; 
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+    font-weight: bolder;
+} */
+li {
     display: inline-block; 
     margin: 10px 0;        
 }
-.panel{
-        float:right;
+.count{
         font-size: 20px; 
         opacity: 0.9;
         filter: alpha(opacity=50);
         font-weight: bolder;
 }
+.btn {
+    background-color: aliceblue;
+}
+span{
+    display: inline-block; 
+    margin: 10px 0;
+}
+.panel {
+    font-size: 20px; 
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    color: white;}

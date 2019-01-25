@@ -17,7 +17,7 @@ export class GitsearchComponent implements OnInit {
   reposArray:any[];
   
 
-  constructor(private gitsearchservice:GitsearchService ) {}
+  constructor(private gitsearchservice:GitsearchService ) { }
 
   searchProfile(){
     this.gitsearchservice.updateProfile(this.username);
