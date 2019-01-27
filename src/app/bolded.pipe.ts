@@ -3,9 +3,9 @@ import {GitsearchService} from './service/gitsearch.service'
 import{ Repository } from './repository';
 
 @Pipe({
-  name: 'bolded'
+  name: 'bolden'
 })
-export class BoldedPipe implements PipeTransform {
+export class BoldenPipe implements PipeTransform {
 
   transform(value: string): any {
     return value.toUpperCase();

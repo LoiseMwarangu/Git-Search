@@ -6,9 +6,10 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { RoutingModule } from './routing/routing.module';
-import { BoldedPipe } from './bolded.pipe';
+import { BoldenPipe } from './bolded.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { GitsearchService } from './service/gitsearch.service';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
     AppComponent, 
     GitsearchComponent, 
     IntroductionComponent,
-    BoldedPipe,
+    BoldenPipe,
     HighlightDirective,
     IntroductionComponent,
   ],

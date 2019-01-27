@@ -1,9 +1,9 @@
-<div id="form">
+<div class=results id="form">
     <form action="">
       <div class="form-group">
         <div class="row">
           <div class="col-md-8">
-            <input type="text" class="form-control" placeholder="Search the username of any github user!" [(ngModel)]="username" name="username">
+            <input type="text" class="form-control" placeholder="Search the username of any github user!" [(ngModel)]="username"  name="username">
           </div>
           <div class="col-sm-4">
             <button class="btn" (click)="searchProfile()">Search</button>
@@ -11,38 +11,35 @@
         </div>
       </div>
     </form>
-  </div>
   <div class= "count" *ngIf= "user">
     <div class="panel">
       <div class="panel-heading">
-        <h3 appHighlight>{{user.login}}'s Details</h3>
+        <h3 appHighlight>{{user.login}}</h3>
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-sm-3">
-            <img src="{{user.avatar_url}}" class="img-circle img-responsive" alt="{{user.login}}'s Avatar">
+            <img src="{{user.avatar_url}}" class="img-circle img-responsive" alt="{{user.login}}">
           </div>
           <div class="col-sm-5">
             <ul class="list-group">
-              <!-- <li class="list-group-item">{{user.login | bolded}} <hr>{{user.login}}</li> -->
+                <li class="list-group-item">{{user.name | bolden}} &mdash;{{user.login}}</li>
             </ul>
           </div>
           <div class="col-sm-4">
             <div>
               <p>
-                <span class="label">{{user.followers}} Followers</span>
-                <span class="label">Following {{user.following}}</span>
-                <span class="label">{{user.public_repos}} Repositories</span>
+                <span class="label">Followers:{{user.followers}} </span> 
+                <span class="label">Following: {{user.following}}</span>
+                <span class="label">Repositories:{{user.public_repository}} </span>
               </p>
-              <p><a href="{{user.html_url}}" target="_blank" class="btn btn-md"></a>View profile on Github</p>
-              <div class="panel">
+              <p><a href="{{user.html_url}}" target="_blank" class="btn btn-md">View this profile on GitHub</a></p>
+        <div class= "describe">
                 <div class="panel-heading">
                   <h3 class="panel-heading">Repositories</h3>
                 </div>
-                <div class="panel-body" *ngFor="let repo of reposArray">
-                  <p class="clear-fix">
-                    <a href="{{repos.html_url}}" target="_blank" class="btn btn-md pull-right">{{repos.name}}</a>
-                  </p>
+                <div class="panel-body" *ngFor="let repos of repoArray">
+                  <p><a href="{{repos.html_url}}" target="_blank" class="btn btn-md">{{repos.name}}</a></p>
                   <p>{{repos.description}} </p>
                 </div>
               </div>
@@ -52,4 +49,5 @@
       </div>
     </div>
   </div>
+</div>
   

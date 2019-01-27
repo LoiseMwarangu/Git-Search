@@ -1,2 +1,46 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+form{
+    padding: 60px;
+  }
+#form{
+    position: relative!important;
+    background-image: url("https://www.imgbase.info/images/safe-wallpapers/photography/sky/55880_sky_night_sky_full_of_stars.jpg");
+    top: 5px;
+    margin: 0 5px 20px 5px;
+  }
+  #form .btn{
+    background-color: #fff;
+    color: #4d004d;
+    border-radius: 10px;
+  }
+  #form .btn:hover{
+    background-color: #000000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  .panel .panel-heading{
+    background-color: #075c69;
+    color: #fff;
+  }
+  .panel-body{
+    border: 1px solid #000000;
+    background-image: url("https://www.imgbase.info/images/safe-wallpapers/photography/sky/55880_sky_night_sky_full_of_stars.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+  }
+  .label{
+    background-color:  #014d47;
+    color: #fff;
+    margin-left: 4px;
+  }
+  .btn{
+    background-color: #000000;
+    color: #fff;
+  }
+  .btn:hover{
+    background-color: #fff;
+    color: #000000;
+    border: 2px solid #000000;
+  }
