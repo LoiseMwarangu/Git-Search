@@ -5,7 +5,6 @@ import { GitsearchComponent } from '../gitsearch/gitsearch.component';
 
 const routes:Routes = [
   {path:"gitsearch",component:GitsearchComponent},
-  {path:"",redirectTo:"/introduction",pathMatch:"full"},
 ]
 
 @NgModule({

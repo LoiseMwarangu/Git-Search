@@ -29,7 +29,6 @@ export class GitsearchService {
   }
 
   userRequest(){
-    this.user= new User ("","","",0,0,0,"");
     interface ApiResponse{
       name:string;
       login:string;
