@@ -7,7 +7,7 @@ form{
     position: relative!important;
     background-image: url("https://www.imgbase.info/images/safe-wallpapers/photography/sky/55880_sky_night_sky_full_of_stars.jpg");
     top: 5px;
-    margin: 0 5px 20px 5px;
+    margin: 5px 5px 20px 5px;
   }
   #form .btn{
     background-color: #fff;
@@ -23,12 +23,16 @@ form{
     background-color: #075c69;
     color: #fff;
   }
-  .panel-body{
+  .panel{
     border: 1px solid #000000;
     background-image: url("https://www.imgbase.info/images/safe-wallpapers/photography/sky/55880_sky_night_sky_full_of_stars.jpg");
     background-repeat: no-repeat;
     opacity: 0.9;
     filter: alpha(opacity=60);
+    height: 2000px;
+  }
+  p{
+      color: aliceblue;
   }
   .label{
     background-color:  #014d47;

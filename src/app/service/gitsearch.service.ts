@@ -30,7 +30,7 @@ export class GitsearchService {
 
   userRequest(){
     interface ApiResponse{
-      name:string;
+      username:string;
       login:string;
       avatar_url:string;
       followers:number;
