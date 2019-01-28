@@ -9,6 +9,7 @@ import{ Repository } from '../repository';
   selector: 'app-gitsearch',
   templateUrl: './gitsearch.component.html',
   styleUrls: ['./gitsearch.component.css'],
+  providers:[GitsearchService],
 })
 
 export class GitsearchComponent implements OnInit {
@@ -27,7 +28,7 @@ export class GitsearchComponent implements OnInit {
     this.reposArray = this.gitSearch.reposArray;
      }
   ngOnInit() {
-    this.gitSearch.updateUser;
+    this.gitSearch.userRequest();
     this.user = this.gitSearch.user;
 
     this.gitSearch.repositoryRequest();
